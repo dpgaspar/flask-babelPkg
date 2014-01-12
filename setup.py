@@ -1,32 +1,25 @@
-"""
-Flask-BabelPkg
------------
+import os
+import sys
+from setuptools import setup, find_packages
 
-Adds i18n/l10n support to Flask applications and extensions with the help of the
-`Babel`_ library. Based on flask-babel, added support for flask extensions
+def fpath(name):
+    return os.path.join(os.path.dirname(__file__), name)
 
-Links
-`````
+def read(fname):
+    return open(fpath(fname)).read()
 
-* `documentation <http://packages.python.org/Flask-Babel>`_
-* `development version
-  <http://github.com/mitsuhiko/flask-babel/zipball/master#egg=Flask-Babel-dev>`_
-
-.. _Babel: http://babel.edgewall.org/
-
-"""
-from setuptools import setup
-
+def desc():
+    return read('README.rst')
 
 setup(
     name='Flask-BabelPkg',
-    version='0.9',
+    version='0.9.1',
     url='http://github.com/dpgaspar/flask-babelPkg',
     license='BSD',
     author='Daniel Gaspar',
     author_email='danielvazgaspar@gmail.com',
     description='Adds i18n/l10n support to Flask applications and extensions',
-    long_description=__doc__,
+    long_description=desc(),
     packages=['flask_babelpkg'],
     zip_safe=False,
     platforms='any',

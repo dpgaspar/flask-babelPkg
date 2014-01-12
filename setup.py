@@ -1,5 +1,5 @@
 """
-Flask-Babel
+Flask-BabelPkg
 -----------
 
 Adds i18n/l10n support to Flask applications and extensions with the help of the

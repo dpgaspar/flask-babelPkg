@@ -2,8 +2,8 @@
 Flask-Babel
 -----------
 
-Adds i18n/l10n support to Flask applications with the help of the
-`Babel`_ library.
+Adds i18n/l10n support to Flask applications and extensions with the help of the
+`Babel`_ library. Based on flask-babel, added support for flask extensions
 
 Links
 `````
@@ -19,15 +19,15 @@ from setuptools import setup
 
 
 setup(
-    name='Flask-Babel',
+    name='Flask-BabelPkg',
     version='0.9',
-    url='http://github.com/mitsuhiko/flask-babel',
+    url='http://github.com/dpgaspar/flask-babelPkg',
     license='BSD',
-    author='Armin Ronacher',
-    author_email='armin.ronacher@active-4.com',
-    description='Adds i18n/l10n support to Flask applications',
+    author='Daniel Gaspar',
+    author_email='danielvazgaspar@gmail.com',
+    description='Adds i18n/l10n support to Flask applications and extensions',
     long_description=__doc__,
-    packages=['flask_babel'],
+    packages=['flask_babelpkg'],
     zip_safe=False,
     platforms='any',
     install_requires=[

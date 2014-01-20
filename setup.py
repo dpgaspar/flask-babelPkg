@@ -13,7 +13,7 @@ def desc():
 
 setup(
     name='Flask-BabelPkg',
-    version='0.9.3',
+    version='0.9.4',
     url='http://github.com/dpgaspar/flask-babelPkg',
     license='BSD',
     author='Daniel Gaspar',

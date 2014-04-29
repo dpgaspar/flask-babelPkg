@@ -9,9 +9,9 @@ import unittest
 from decimal import Decimal
 import flask
 from datetime import datetime
-import flask_babel as babel
-from flask_babel import gettext, ngettext, lazy_gettext
-from flask_babel._compat import text_type
+import flask_babelpkg as babel
+from flask_babelpkg import gettext, ngettext, lazy_gettext
+from flask_babelpkg._compat import text_type
 
 
 class DateFormattingTestCase(unittest.TestCase):
